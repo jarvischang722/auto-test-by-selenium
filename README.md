@@ -1,9 +1,13 @@
-1. npm install 
-2. npm install -g codeceptjs-webdriverio  
+# 1. npm install 
+
+# 2. 安裝 codeceptjs
+    npm install -g codeceptjs-webdriverio  
     or 
     npm install codeceptjs-webdriverio --save-dev
     
-3. npm install selenium-standalone@latest -g
-   selenium-standalone install
-
-4.  selenium-standalone start    
+# 3. 安裝 selenium-standalone 
+    npm install selenium-standalone@latest -g
+    selenium-standalone install
+    selenium-standalone start  
+    
+ 
