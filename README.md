@@ -10,4 +10,5 @@
     selenium-standalone install
     selenium-standalone start  
     
- 
+# 4. 啟動codeceptjs
+    codeceptjs run --steps
