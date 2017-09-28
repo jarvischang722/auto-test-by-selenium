@@ -6,7 +6,9 @@
     "WebDriverIO": {
       "url": "http://localhost",
       "browser": "chrome",
-      "smartWait": 3000
+      "smartWait": 1000,
+      "windowSize": "maximize",
+      "uniqueScreenshotNames":true
     }
   },
   "include": {
