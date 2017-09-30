@@ -6,7 +6,9 @@ Feature('BookingBaseForTheme3');
 
 Scenario('test booking hotel for theme 3', (I) => {
 
-    I.amOnPage('http://rsv.linktravel.tw/webhotel/0184'); //打開這個瀏覽器
+    //打開這個瀏覽器
+    I.amOnPage('http://rsv.linktravel.tw/webhotel/0184');
+
     //填入搜尋條件
     I.fillField('ArrivalDate', '2017/10/26');  //入住日期
     I.fillField('DepartureDate', '2017/10/27'); //退房日期
@@ -41,6 +43,7 @@ Scenario('test booking hotel for theme 3', (I) => {
 
     I.see('訂單編號');
     I.see('RMWHD');
-
-    I.wait(5);
+    // let order_no = 'RV11234';
+    // I.saveScreenshot('order_'+order_no+'.png');
+    I.wait(10);
 });

@@ -15,6 +15,11 @@
     "I": "./steps_file.js"
   },
   "bootstrap": false,
-  "mocha": {},
-  "name": "webdriver-test"
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "reports",
+      "uniqueScreenshotNames": "true"
+    }
+  },
+  "name": "auto-test-webdriver"
 }

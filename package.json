@@ -1,11 +1,12 @@
 {
-  "name": "webdriver-test",
+  "name": "auto-test-webdriver",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "auto-test":"codeceptjs run --steps --verbose"
+    "auto-test": "codeceptjs run  --steps --verbose",
+    "test3" : "codeceptjs run  --grep 'BookingBaseForTheme3' --steps --verbose  --reporter html"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "wdio-dot-reporter": "0.0.9",
     "wdio-mocha-framework": "^0.5.11",
     "webdriverio": "^4.8.0"
+  },
+  "dependencies": {
+    "mochawesome": "^2.3.1"
   }
 }
