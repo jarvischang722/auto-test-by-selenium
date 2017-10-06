@@ -1,4 +1,5 @@
-# 1. npm install 
+# 1. 安裝npm 套件 
+    $ npm install
 
 # 2. 安裝 codeceptjs
     $ npm install -g codeceptjs-webdriverio  
