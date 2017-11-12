@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "auto-test": "codeceptjs run  --steps --verbose",
-    "theme3" : "codeceptjs run  --grep 'BookingBaseForTheme3' --steps  "
+    "theme3": "codeceptjs run  --grep 'BookingBaseForTheme3' --steps  "
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,7 @@
     "webdriverio": "^4.8.0"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "mochawesome": "^2.3.1"
   }
 }

@@ -1,15 +1,19 @@
 /**
  * 版三基本測試程序一般結帳
  */
-
+const $ = require('cheerio');
 Feature('BookingBaseForTheme3');
 
-Scenario('test booking hotel for theme 3', (I) => {
+Scenario('test booking hotel for theme 3', function*(I){
 
     //打開這個瀏覽器
     I.amOnPage('http://rsv.linktravel.tw/webhotel/0184');
     // I.seeElement('.ui-dialog-titlebar-close');
     // I.click('.ui-dialog-titlebar-close');
+
+    // let Adult = yield I.grabValueFrom('#Adult');
+    // let btt = yield I.grabHTMLFrom('.ButtonSt1');
+
     //填入搜尋條件
     I.fillField('ArrivalDate', '2017/11/23');  //入住日期
     I.fillField('DepartureDate', '2017/11/24'); //退房日期
