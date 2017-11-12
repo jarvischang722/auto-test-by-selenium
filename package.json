@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "auto-test": "codeceptjs run  --steps --verbose",
-    "test3" : "codeceptjs run  --grep 'BookingBaseForTheme3' --steps --verbose  --reporter html"
+    "theme3" : "codeceptjs run  --grep 'BookingBaseForTheme3' --steps  "
   },
   "keywords": [],
   "author": "",
