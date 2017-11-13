@@ -5,7 +5,13 @@ const $ = require('cheerio');
 Feature('BookingBaseForTheme3');
 
 Scenario('test booking hotel for theme 3', function*(I){
-
+    // I.haveRequestHeaders({
+    //     'Accept': 'application/json',
+    //     'User-Agent': 'Unirest Node.js'
+    // });
+    // const result1 = yield I.sendPostRequest("http://192.168.1.73:8080/bacchus/GatewaySvc",{'TxnData':'eyJSRVZFLUNPREUiOiJCQUMwOTAwODAzMDAwMCJ9'});
+    //
+    // console.log(result1.raw_body);
     //打開這個瀏覽器
     I.amOnPage('http://rsv.linktravel.tw/webhotel/0184');
     // I.seeElement('.ui-dialog-titlebar-close');
@@ -15,14 +21,15 @@ Scenario('test booking hotel for theme 3', function*(I){
     // let btt = yield I.grabHTMLFrom('.ButtonSt1');
 
     //填入搜尋條件
-    I.fillField('ArrivalDate', '2017/11/23');  //入住日期
-    I.fillField('DepartureDate', '2017/11/24'); //退房日期
-    I.selectOption('Adult','4'); //小孩人數
+    I.fillField('ArrivalDate', '2017/11/26');  //入住日期
+    I.fillField('DepartureDate', '2017/11/27'); //退房日期
+   // I.selectOption('Adult','2'); //小孩人數
     I.click('搜尋');
 
 
     //選擇某一項產品
-    I.see('高鐵聯票專案(繁體中文)');
+    // I.see('高鐵聯票專案(繁體中文)');
+    I.see('聯票專案');
     I.see('檢視空房');
     I.click('檢視空房');
 
