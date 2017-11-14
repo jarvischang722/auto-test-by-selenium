@@ -1,6 +1,4 @@
 {
-  "tests": "./test/specs/*_test.js",
-  "timeout": 10000,
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
@@ -8,18 +6,25 @@
       "browser": "chrome",
       "smartWait": 1000,
       "windowSize": "maximize",
-      "uniqueScreenshotNames":true
-    }
+      "uniqueScreenshotNames": true
+    },
+    "REST": {}
   },
   "include": {
-    "I": "./steps_file.js"
+    "I": "./steps_file.js",
+    "theme3ObjPage": "./pages/theme3Obj.js"
   },
-  "bootstrap": false,
   "mocha": {
     "reporterOptions": {
       "reportDir": "reports",
       "uniqueScreenshotNames": "true"
     }
   },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./test/specs/*_test.js",
+  "timeout": 10000,
   "name": "auto-test-webdriver"
+
 }
