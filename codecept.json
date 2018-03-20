@@ -7,12 +7,7 @@
       "smartWait": 1000,
       "windowSize": "maximize",
       "uniqueScreenshotNames": true
-    },
-    "REST": {}
-  },
-  "include": {
-    "I": "./steps_file.js",
-    "theme3ObjPage": "./pages/theme3Obj.js"
+    }
   },
   "mocha": {
     "reporterOptions": {

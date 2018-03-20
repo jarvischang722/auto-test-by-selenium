@@ -6,16 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "auto-test": "codeceptjs run  --steps --verbose",
-    "theme3": "codeceptjs run  --grep 'BookingBaseForTheme3' --steps  "
+    "theme2": "codeceptjs run  'BookingBaseForTheme2' --steps",
+    "theme3": "codeceptjs run  --grep 'BookingBaseForTheme3' --steps",
+    "bacchus": "codeceptjs run  --grep BacchusBase --steps "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "should": "^13.1.0",
+    "should": "^13.2.1",
     "wdio-dot-reporter": "0.0.9",
-    "wdio-mocha-framework": "^0.5.11",
-    "webdriverio": "^4.8.0"
+    "wdio-mocha-framework": "^0.5.13",
+    "webdriverio": "^4.12.0"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
